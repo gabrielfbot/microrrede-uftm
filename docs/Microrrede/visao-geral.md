@@ -11,19 +11,6 @@ A microrrede experimental do ICTE/UFTM foi concebida como uma infraestrutura té
 
 Sua estrutura permite não apenas o acompanhamento do comportamento operacional dos subsistemas, mas também a realização de análises voltadas ao desempenho energético, estratégias de controle e integração entre diferentes tecnologias aplicadas ao setor elétrico.
 
-## Vista geral da microrrede
-
-> **Inserir aqui a figura geral da microrrede**
->
-> **Figura X – Vista geral da microrrede experimental do ICTE/UFTM**
-
-<!-- Exemplo para usar depois:
-![Vista geral da microrrede](/img/microrrede-geral.png)
-*Figura X – Vista geral da microrrede experimental do ICTE/UFTM.*
--->
-
-A imagem geral da microrrede tem a função de apresentar, de forma sintética, a disposição dos principais elementos que compõem a instalação, facilitando a compreensão da arquitetura global do sistema e da relação entre seus subsistemas.
-
 ## Finalidade da plataforma
 
 Esta plataforma foi desenvolvida para reunir, organizar e disponibilizar a documentação técnica da microrrede de forma clara e estruturada. O ambiente foi pensado para servir como base de consulta, apoio às atividades acadêmicas e registro das principais informações associadas ao sistema.
@@ -39,7 +26,7 @@ De maneira geral, a proposta da plataforma envolve:
 
 A microrrede apresenta caráter experimental e multidisciplinar, sendo composta por diferentes elementos que atuam de forma complementar dentro da infraestrutura elétrica. Essa configuração permite investigar o comportamento do sistema tanto sob a perspectiva operacional quanto sob a ótica acadêmica e tecnológica.
 
-Sua organização contempla dispositivos de geração, armazenamento, distribuição, proteção, automação e supervisão, o que possibilita análises sobre fluxo de energia, condições de operação, aquisição de dados e resposta dos subsistemas em diferentes cenários.
+Sua organização contempla dispositivos de geração, armazenamento, distribuição, automação e supervisão, o que possibilita análises sobre fluxo de energia, condições de operação, aquisição de dados e resposta dos subsistemas em diferentes cenários.
 
 ## Estrutura geral da microrrede
 
@@ -52,10 +39,6 @@ O sistema fotovoltaico é responsável pela conversão da energia solar em energ
 ### Armazenamento em baterias
 
 O banco de baterias exerce a função de armazenamento energético, contribuindo para análises relacionadas à gestão da energia, continuidade operacional e estratégias de suporte ao sistema. Esse subsistema também amplia as possibilidades de estudo sobre modos de operação e integração entre geração e consumo.
-
-### Distribuição e proteção
-
-A infraestrutura de distribuição reúne os elementos responsáveis pela condução, organização e proteção da energia elétrica no interior da microrrede. Nessa camada, destacam-se os quadros elétricos, dispositivos de proteção, manobra e medição, fundamentais para a segurança e o funcionamento adequado do sistema.
 
 ### Automação e controle
 
