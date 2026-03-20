@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmicrorrede_uftm=globalThis.webpackChunkmicrorrede_uftm||[]).push([[2288],{5528(e){e.exports=JSON.parse('{"metadata":{"permalink":"/microrrede-uftm/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

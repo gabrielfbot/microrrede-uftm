@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmicrorrede_uftm=globalThis.webpackChunkmicrorrede_uftm||[]).push([[9858],{5516(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"default"}')}}]);
