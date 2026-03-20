@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkmicrorrede_uftm=globalThis.webpackChunkmicrorrede_uftm||[]).push([[1903],{1912(r){r.exports=JSON.parse('{"blogBasePath":"/microrrede-uftm/blog","blogTitle":"Blog","authorsListPath":"/microrrede-uftm/blog/authors"}')}}]);
