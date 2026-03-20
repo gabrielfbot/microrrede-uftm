@@ -11,17 +11,17 @@ export default function Home() {
         <section
           style={{
             background:
-              'linear-gradient(135deg, #0b1220 0%, #0f2d24 45%, #166534 100%)',
+              'radial-gradient(circle at top left, rgba(34,197,94,0.22), transparent 28%), linear-gradient(135deg, #08111f 0%, #0c2430 35%, #14532d 100%)',
             color: 'white',
-            padding: '80px 20px 70px 20px',
+            padding: '88px 20px 78px 20px',
           }}>
           <div
             style={{
               maxWidth: '1200px',
               margin: '0 auto',
               display: 'grid',
-              gridTemplateColumns: '1.25fr 0.95fr',
-              gap: '36px',
+              gridTemplateColumns: '1.2fr 0.95fr',
+              gap: '34px',
               alignItems: 'center',
             }}>
             <div>
@@ -33,75 +33,46 @@ export default function Home() {
                   marginBottom: '22px',
                   flexWrap: 'wrap',
                 }}>
-                <div
-                  style={{
-                    backgroundColor: 'rgba(255,255,255,0.95)',
-                    padding: '10px 12px',
-                    borderRadius: '14px',
-                    boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
-                  }}>
-                  <img
-                    src="/microrrede-uftm/img/logo-nepsel.jpeg"
-                    alt="Logo NEPSEL"
-                    style={{
-                      height: '46px',
-                      width: 'auto',
-                      objectFit: 'contain',
-                      display: 'block',
-                    }}
-                  />
-                </div>
-
-                <div
-                  style={{
-                    backgroundColor: 'rgba(255,255,255,0.95)',
-                    padding: '10px 12px',
-                    borderRadius: '14px',
-                    boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
-                  }}>
-                  <img
-                    src="/microrrede-uftm/img/logo-icte.jpeg"
-                    alt="Logo ICTE"
-                    style={{
-                      height: '46px',
-                      width: 'auto',
-                      objectFit: 'contain',
-                      display: 'block',
-                    }}
-                  />
-                </div>
-
+                <LogoBadge
+                  src="/microrrede-uftm/img/logo-nepsel.jpeg"
+                  alt="Logo NEPSEL"
+                />
+                <LogoBadge
+                  src="/microrrede-uftm/img/logo-icte.jpeg"
+                  alt="Logo ICTE"
+                />
                 <span
                   style={{
-                    fontSize: '0.95rem',
-                    fontWeight: 600,
+                    fontSize: '0.92rem',
+                    fontWeight: 700,
                     color: '#bbf7d0',
-                    letterSpacing: '0.04em',
+                    letterSpacing: '0.06em',
                   }}>
-                  PLATAFORMA TÉCNICA • ICTE / NEPSEL / UFTM
+                  DOCUMENTAÇÃO TÉCNICA • ICTE / NEPSEL / UFTM
                 </span>
               </div>
 
               <h1
                 style={{
-                  fontSize: '3.6rem',
-                  lineHeight: '1.05',
-                  marginBottom: '18px',
+                  fontSize: '3.8rem',
+                  lineHeight: '1.03',
+                  marginBottom: '16px',
                   fontWeight: 800,
+                  maxWidth: '760px',
                 }}>
                 Microrrede UFTM
               </h1>
 
               <p
                 style={{
-                  fontSize: '1.22rem',
-                  lineHeight: '1.85',
+                  fontSize: '1.18rem',
+                  lineHeight: '1.9',
                   maxWidth: '760px',
-                  marginBottom: '30px',
-                  color: 'rgba(255,255,255,0.93)',
+                  marginBottom: '28px',
+                  color: 'rgba(255,255,255,0.92)',
                 }}>
-                Plataforma institucional para organização da documentação técnica
-                da microrrede experimental do ICTE/UFTM, reunindo arquitetura do
+                Plataforma institucional para organização da documentação da
+                microrrede experimental do ICTE/UFTM, reunindo arquitetura do
                 sistema, subsistemas energéticos, documentação técnica,
                 automação, supervisão e análises operacionais.
               </p>
@@ -122,7 +93,7 @@ export default function Home() {
                     fontWeight: 800,
                     padding: '14px 28px',
                     borderRadius: '12px',
-                    boxShadow: '0 10px 22px rgba(34,197,94,0.25)',
+                    boxShadow: '0 12px 24px rgba(34,197,94,0.22)',
                   }}
                   to="/docs/Microrrede/visao-geral">
                   Acessar documentação
@@ -145,7 +116,7 @@ export default function Home() {
               <div
                 style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(3, minmax(120px, 1fr))',
+                  gridTemplateColumns: 'repeat(3, minmax(140px, 1fr))',
                   gap: '14px',
                   maxWidth: '760px',
                 }}>
@@ -159,16 +130,16 @@ export default function Home() {
               style={{
                 backgroundColor: 'rgba(255,255,255,0.08)',
                 border: '1px solid rgba(255,255,255,0.14)',
-                borderRadius: '22px',
+                borderRadius: '24px',
                 padding: '30px',
                 backdropFilter: 'blur(8px)',
-                boxShadow: '0 16px 40px rgba(0,0,0,0.14)',
+                boxShadow: '0 18px 42px rgba(0,0,0,0.18)',
               }}>
               <h2
                 style={{
                   color: '#dcfce7',
-                  marginBottom: '18px',
-                  fontSize: '1.8rem',
+                  marginBottom: '16px',
+                  fontSize: '1.7rem',
                   fontWeight: 800,
                 }}>
                 Objetivos da plataforma
@@ -179,8 +150,8 @@ export default function Home() {
                   lineHeight: '2',
                   paddingLeft: '22px',
                   margin: 0,
-                  fontSize: '1.05rem',
-                  color: 'rgba(255,255,255,0.95)',
+                  fontSize: '1.04rem',
+                  color: 'rgba(255,255,255,0.96)',
                 }}>
                 <li>Centralizar a documentação técnica da microrrede</li>
                 <li>Organizar os subsistemas de forma clara e didática</li>
@@ -195,7 +166,26 @@ export default function Home() {
           style={{
             maxWidth: '1200px',
             margin: '0 auto',
-            padding: '54px 20px 20px 20px',
+            padding: '26px 20px 0 20px',
+          }}>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(4, minmax(180px, 1fr))',
+              gap: '18px',
+            }}>
+            <HighlightCard title="Arquitetura" text="Estrutura geral do sistema e organização funcional." />
+            <HighlightCard title="Subsistemas" text="Fotovoltaico, baterias, QDG, automação e supervisão." />
+            <HighlightCard title="Documentação" text="Diagramas, normas, manuais e fichas técnicas." />
+            <HighlightCard title="Análises" text="Ensaios, validações e resultados experimentais." />
+          </div>
+        </section>
+
+        <section
+          style={{
+            maxWidth: '1200px',
+            margin: '0 auto',
+            padding: '34px 20px 18px 20px',
           }}>
           <div
             style={{
@@ -266,7 +256,7 @@ export default function Home() {
                 <li>Documentação centralizada em ambiente web</li>
                 <li>Navegação por seções técnicas</li>
                 <li>Acesso rápido a diagramas e análises</li>
-                <li>Base para evolução do projeto de TCC</li>
+                <li>Base para evolução contínua do projeto</li>
               </ul>
             </div>
           </div>
@@ -306,6 +296,7 @@ export default function Home() {
               alignItems: 'stretch',
             }}>
             <CardLink
+              icon="⚡"
               badge="01"
               title="Microrrede"
               description="Visão geral, arquitetura do sistema e modos de operação."
@@ -313,6 +304,7 @@ export default function Home() {
             />
 
             <CardLink
+              icon="🔋"
               badge="02"
               title="Subsistemas"
               description="Fotovoltaico, baterias, carport, QDG, automação e supervisório."
@@ -320,6 +312,7 @@ export default function Home() {
             />
 
             <CardLink
+              icon="📘"
               badge="03"
               title="Documentação Técnica"
               description="Diagramas, normas, manuais e fichas técnicas dos equipamentos."
@@ -327,6 +320,7 @@ export default function Home() {
             />
 
             <CardLink
+              icon="📊"
               badge="04"
               title="Análises"
               description="Testes, ensaios operacionais e resultados obtidos na microrrede."
@@ -356,8 +350,8 @@ export default function Home() {
                 color: '#0f172a',
                 fontWeight: 800,
               }}>
-                Como navegar
-              </h2>
+              Como navegar
+            </h2>
 
             <ul
               style={{
@@ -367,15 +361,38 @@ export default function Home() {
                 paddingLeft: '20px',
                 fontSize: '1.02rem',
               }}>
-                <li>Comece pela seção <strong>Microrrede</strong> para entender a visão geral do sistema.</li>
-                <li>Acesse <strong>Subsistemas</strong> para estudar cada elemento da instalação.</li>
-                <li>Consulte <strong>Documentação Técnica</strong> para diagramas, normas e manuais.</li>
-                <li>Use a área de <strong>Análises</strong> para registrar ensaios e resultados experimentais.</li>
-              </ul>
+              <li>Comece pela seção <strong>Microrrede</strong> para entender a visão geral do sistema.</li>
+              <li>Acesse <strong>Subsistemas</strong> para estudar cada elemento da instalação.</li>
+              <li>Consulte <strong>Documentação Técnica</strong> para diagramas, normas e manuais.</li>
+              <li>Use a área de <strong>Análises</strong> para registrar ensaios e resultados experimentais.</li>
+            </ul>
           </div>
         </section>
       </main>
     </Layout>
+  );
+}
+
+function LogoBadge({src, alt}) {
+  return (
+    <div
+      style={{
+        backgroundColor: 'rgba(255,255,255,0.95)',
+        padding: '10px 12px',
+        borderRadius: '14px',
+        boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
+      }}>
+      <img
+        src={src}
+        alt={alt}
+        style={{
+          height: '46px',
+          width: 'auto',
+          objectFit: 'contain',
+          display: 'block',
+        }}
+      />
+    </div>
   );
 }
 
@@ -410,7 +427,39 @@ function QuickStat({title, value}) {
   );
 }
 
-function CardLink({badge, title, description, to}) {
+function HighlightCard({title, text}) {
+  return (
+    <div
+      style={{
+        backgroundColor: 'white',
+        border: '1px solid #e2e8f0',
+        borderRadius: '18px',
+        padding: '20px',
+        boxShadow: '0 8px 20px rgba(15, 23, 42, 0.04)',
+      }}>
+      <h3
+        style={{
+          margin: '0 0 10px 0',
+          color: '#166534',
+          fontSize: '1.2rem',
+          fontWeight: 800,
+        }}>
+        {title}
+      </h3>
+      <p
+        style={{
+          margin: 0,
+          color: '#475569',
+          lineHeight: '1.8',
+          fontSize: '0.98rem',
+        }}>
+        {text}
+      </p>
+    </div>
+  );
+}
+
+function CardLink({icon, badge, title, description, to}) {
   return (
     <Link
       to={to}
@@ -426,14 +475,11 @@ function CardLink({badge, title, description, to}) {
           borderRadius: '20px',
           padding: '26px',
           boxShadow: '0 10px 24px rgba(15, 23, 42, 0.05)',
-
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-
           height: '100%',
-          minHeight: '260px',
-
+          minHeight: '270px',
           transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
           cursor: 'pointer',
         }}
@@ -448,7 +494,21 @@ function CardLink({badge, title, description, to}) {
           e.currentTarget.style.borderColor = '#e2e8f0';
         }}>
         <div>
-          {badge && (
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginBottom: '16px',
+            }}>
+            <div
+              style={{
+                fontSize: '1.6rem',
+                lineHeight: 1,
+              }}>
+              {icon}
+            </div>
+
             <div
               style={{
                 display: 'inline-block',
@@ -459,11 +519,10 @@ function CardLink({badge, title, description, to}) {
                 padding: '5px 10px',
                 fontSize: '0.82rem',
                 fontWeight: 800,
-                marginBottom: '16px',
               }}>
               {badge}
             </div>
-          )}
+          </div>
 
           <h3
             style={{
