@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Sistema Fotovoltaico | Microrrede UFTM</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://gabrielfbot.github.io/microrrede-uftm/img/logo-nepsel.jpeg"><meta data-rh="true" name="twitter:image" content="https://gabrielfbot.github.io/microrrede-uftm/img/logo-nepsel.jpeg"><meta data-rh="true" property="og:url" content="https://gabrielfbot.github.io/microrrede-uftm/docs/Microrrede/Subsistemas/fotovoltaico/"><meta data-rh="true" property="og:locale" content="pt_BR"><meta data-rh="true" name="docusaurus_locale" content="pt-BR"><meta data-rh="true" name="docsearch:language" content="pt-BR"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Sistema Fotovoltaico | Microrrede UFTM"><meta data-rh="true" name="description" content="O subsistema fotovoltaico representa a principal fonte de geração distribuída da instalação experimental, sendo responsável pela conversão da radiação solar em energia elétrica em corrente contínua. Sua integração com os inversores híbridos, com o sistema de armazenamento e com a rede elétrica permite analisar diferentes estratégias de operação, fluxo de potência e desempenho energético em condições reais de uso."><meta data-rh="true" property="og:description" content="O subsistema fotovoltaico representa a principal fonte de geração distribuída da instalação experimental, sendo responsável pela conversão da radiação solar em energia elétrica em corrente contínua. Sua integração com os inversores híbridos, com o sistema de armazenamento e com a rede elétrica permite analisar diferentes estratégias de operação, fluxo de potência e desempenho energético em condições reais de uso."><link data-rh="true" rel="icon" href="/microrrede-uftm/img/logo-nepsel.jpeg"><link data-rh="true" rel="canonical" href="https://gabrielfbot.github.io/microrrede-uftm/docs/Microrrede/Subsistemas/fotovoltaico/"><link data-rh="true" rel="alternate" href="https://gabrielfbot.github.io/microrrede-uftm/docs/Microrrede/Subsistemas/fotovoltaico/" hreflang="pt-BR"><link data-rh="true" rel="alternate" href="https://gabrielfbot.github.io/microrrede-uftm/docs/Microrrede/Subsistemas/fotovoltaico/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sistema Fotovoltaico","item":"https://gabrielfbot.github.io/microrrede-uftm/docs/Microrrede/Subsistemas/fotovoltaico"}]}</script><link rel="stylesheet" href="/microrrede-uftm/assets/css/styles.b0092fe2.css">
-<script src="/microrrede-uftm/assets/js/runtime~main.3152bfdb.js" defer="defer"></script>
+<script src="/microrrede-uftm/assets/js/runtime~main.6b6f7960.js" defer="defer"></script>
 <script src="/microrrede-uftm/assets/js/main.3511d1c6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -85,18 +85,19 @@
 <p>Dessa forma, o arranjo físico adotado atende simultaneamente aos requisitos construtivos, operacionais e didáticos da instalação, reforçando a proposta da microrrede como plataforma experimental para estudos em geração distribuída, supervisão e integração energética.</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-integração-com-os-inversores">7. Integração com os Inversores<a href="#7-integração-com-os-inversores" class="hash-link" aria-label="Link direto para 7. Integração com os Inversores" title="Link direto para 7. Integração com os Inversores" translate="no">​</a></h2>
-<p>A energia gerada pelos módulos é encaminhada aos inversores híbridos, responsáveis pela conversão CC/CA, sincronização com a rede, gerenciamento do fluxo de potência e interface com o banco de baterias.</p>
-<p>Além da conversão propriamente dita, esses equipamentos executam funções essenciais para a operação do sistema, tais como:</p>
+<p>A integração entre o arranjo fotovoltaico e a arquitetura elétrica da microrrede é realizada por meio de inversores híbridos trifásicos, responsáveis pela conversão da energia gerada em corrente contínua para corrente alternada e pela coordenação do fluxo energético entre os diferentes subsistemas. No caso em estudo, foram adotados dois inversores Deye SUN-12K-SG04LP3, cada um operando com duas entradas MPPT independentes, o que permite o processamento das quatro strings do gerador fotovoltaico de forma distribuída.</p>
+<p>Esses equipamentos exercem função estratégica na operação do sistema, pois estabelecem a interface entre a geração solar, o banco de baterias, as cargas locais e a rede da concessionária. Em termos práticos, isso significa que os inversores não apenas convertem energia, mas também determinam como essa energia será disponibilizada, armazenada ou compartilhada com os demais elementos da instalação.</p>
+<p>Entre suas principais atribuições, destacam-se:</p>
 <ul>
-<li class="">rastreamento do ponto de máxima potência;</li>
-<li class="">gerenciamento da energia gerada;</li>
-<li class="">coordenação com o sistema de armazenamento;</li>
-<li class="">operação conectada à rede;</li>
-<li class="">operação em condições isoladas;</li>
-<li class="">disponibilização de dados ao ambiente supervisório.</li>
+<li class="">rastreamento do ponto de máxima potência das strings conectadas;</li>
+<li class="">conversão eletrônica CC/CA;</li>
+<li class="">sincronização com a rede elétrica;</li>
+<li class="">gerenciamento do fluxo de potência entre geração, armazenamento e consumo;</li>
+<li class="">suporte aos modos de operação conectada, isolada e híbrida;</li>
+<li class="">envio de variáveis elétricas e operacionais ao sistema supervisório.</li>
 </ul>
-<p>Dessa forma, os inversores atuam como elemento de interligação entre geração, armazenamento, cargas e rede elétrica.</p>
-<hr>
+<p>A presença de entradas MPPT independentes contribui para maior flexibilidade operacional e melhor aproveitamento energético, sobretudo em situações de diferenças térmicas, variações de irradiância ou possíveis assimetrias entre grupos de módulos. Além disso, a integração com o sistema de armazenamento amplia a capacidade de gerenciamento energético da microrrede, permitindo estratégias mais avançadas de operação e controle.</p>
+<p>Do ponto de vista experimental, a atuação dos inversores é especialmente relevante, pois eles concentram parte significativa das funções de conversão, monitoramento e coordenação energética da instalação. Por essa razão, constituem um dos principais elementos de análise para estudos relacionados à eficiência, estabilidade, qualidade de energia e desempenho operacional da microrrede.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="8-vista-geral-da-integração-do-subsistema">8. Vista Geral da Integração do Subsistema<a href="#8-vista-geral-da-integração-do-subsistema" class="hash-link" aria-label="Link direto para 8. Vista Geral da Integração do Subsistema" title="Link direto para 8. Vista Geral da Integração do Subsistema" translate="no">​</a></h2>
 <p align="center"><img src="/microrrede-uftm/img/fotovoltaico-geral.JPEG" width="700"></p>
 <p align="center"><i>Figura 3 – Vista geral da integração do sistema fotovoltaico com os demais elementos da instalação.</i></p>
