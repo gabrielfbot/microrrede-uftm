@@ -16,18 +16,26 @@ A unidade de geração encontra-se instalada nas dependências da Universidade F
 
 ### 1.1 Dados de Localização
 
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <div>
+
 <p align="center"><b>Tabela 1 – Localização da instalação da microrrede.</b></p>
 
 | Parâmetro | Informação |
-|----------|----------|
+|:---------:|:----------:|
 | Coordenadas Geográficas | -19.710906122658464, -47.96185612871777 |
 | Endereço | Av. Randolfo Borges Júnior, 1400 – Univerdecidade |
 | Município / Estado | Uberaba – MG |
 | Situação da Instalação | Sistema já instalado e em operação |
 
+  </div>
+</div>
+
 <p align="center"><small>Fonte: elaboração própria, 2025.</small></p>
 
 ### 1.2 Localização Geográfica
+
+<p align="center"><i>Figura 1 – Localização do sistema de microgeração no campus Univerdecidade.</i></p>
 
 <p align="center">
   <iframe
@@ -40,7 +48,6 @@ A unidade de geração encontra-se instalada nas dependências da Universidade F
   </iframe>
 </p>
 
-<p align="center"><i>Figura 1 – Localização do sistema de microgeração no campus Univerdecidade.</i></p>
 <p align="center"><small>Fonte: Google Maps, 2025.</small></p>
 
 A área ocupada corresponde ao espaço destinado ao *carport* fotovoltaico, no qual estão instalados os módulos responsáveis pela geração. A posição adotada favorece a organização do arranjo físico, o acesso técnico aos equipamentos e a integração com os demais elementos da instalação experimental.
@@ -57,17 +64,20 @@ Essa configuração possibilita o fornecimento de energia às cargas, a interaç
 
 ## 3. Composição do Subsistema
 
-A estrutura geral contempla os seguintes elementos:
+A composição do subsistema fotovoltaico inclui:
 
-- módulos fotovoltaicos de silício monocristalino;
-- estrutura metálica de fixação do tipo *carport*;
-- arranjos elétricos organizados em *strings*;
-- inversores híbridos trifásicos com múltiplos MPPTs;
-- dispositivos de proteção em corrente contínua e alternada;
-- cabeamento específico para aplicação fotovoltaica;
-- interface com o sistema de armazenamento e com o sistema supervisório.
+- **36 módulos OSDA ODA555-36V-MH**, monocristalinos, de **555 Wp** cada;
+- potência total instalada de **19,98 kWp**;
+- **4 strings** com **9 módulos em série** por string;
+- **2 inversores híbridos trifásicos Deye SUN-12K-SG04LP3**, de **12 kW** cada;
+- **2 MPPTs por inversor**;
+- estrutura metálica tipo **carport**;
+- orientação **Norte–Sul** e inclinação aproximada de **15°**;
+- conectores **MC4** e cabos resistentes à radiação UV;
+- proteção em corrente contínua e alternada;
+- integração com **EPC**, banco de baterias e rede elétrica.
 
-A presença desses componentes permite avaliar tanto aspectos construtivos quanto elétricos, abrangendo desde a geração até a conversão e integração da energia produzida.
+Esses componentes formam o núcleo de geração solar da instalação, permitindo conversão eficiente da energia, monitoramento operacional e integração com os demais subsistemas energéticos.
 
 ---
 
@@ -75,13 +85,26 @@ A presença desses componentes permite avaliar tanto aspectos construtivos quant
 
 O desempenho dos módulos é caracterizado por parâmetros elétricos fundamentais para o projeto e para a análise operacional do sistema, dentre os quais se destacam:
 
-- potência nominal máxima;
-- tensão de circuito aberto (Voc);
-- corrente de curto-circuito (Isc);
-- tensão no ponto de máxima potência (Vmp);
-- corrente no ponto de máxima potência (Imp);
-- eficiência de conversão;
-- comportamento térmico em função das condições ambientais.
+<p align="center"><b>Tabela X – Dados técnicos do módulo fotovoltaico OSDA ODA555-36V-MH</b></p>
+
+| Parâmetro | Valor |
+|:---------:|:-----:|
+| Potência Nominal (Pmax) | 555 Wp |
+| Tensão de Potência Máxima (Vmp) | 41,48 V |
+| Corrente de Potência Máxima (Imp) | 13,38 A |
+| Tensão de Circuito Aberto (Voc) | 49,56 V |
+| Corrente de Curto-Circuito (Isc) | 14,20 A |
+| Eficiência do módulo | 21,28 % |
+| Dimensões | 2278 × 1134 × 35 mm |
+| Peso | 27,5 kg |
+| Tipo da célula | Monocristalina 182 mm (half-cell) |
+| Número de células | 144 (6 × 24) |
+| Temperatura de operação | −40 °C a +85 °C |
+| Coeficiente térmico da potência (Pmax) | −0,35 % / °C |
+| Coeficiente térmico da corrente (Isc) | +0,05 % / °C |
+| Coeficiente térmico da tensão (Voc) | −0,275 % / °C |
+
+<p align="center"><small>Fonte: Datasheet OSDA (adaptado), 2025.</small></p>
 
 Esses parâmetros influenciam diretamente o dimensionamento das *strings*, a faixa de operação dos MPPTs e a potência efetivamente disponibilizada ao sistema em diferentes condições de irradiância e temperatura.
 
