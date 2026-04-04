@@ -22,7 +22,7 @@ A unidade de geração encontra-se instalada nas dependências da Universidade F
 <p align="center"><b>Tabela 1 – Localização da instalação da microrrede.</b></p>
 
 | Parâmetro | Informação |
-|:---------:|:----------:|
+|:----------|:----------:|
 | Coordenadas Geográficas | -19.710906122658464, -47.96185612871777 |
 | Endereço | Av. Randolfo Borges Júnior, 1400 – Univerdecidade |
 | Município / Estado | Uberaba – MG |
@@ -35,7 +35,7 @@ A unidade de geração encontra-se instalada nas dependências da Universidade F
 
 ### 1.2 Localização Geográfica
 
-<p align="center"><i>Figura 1 – Localização do sistema de microgeração no campus Univerdecidade.</i></p>
+<p align="center"><i>Figura 2 – Localização do sistema de microgeração no campus Univerdecidade.</i></p>
 
 <p align="center">
   <iframe
@@ -85,10 +85,13 @@ Esses componentes formam o núcleo de geração solar da instalação, permitind
 
 O desempenho dos módulos é caracterizado por parâmetros elétricos fundamentais para o projeto e para a análise operacional do sistema, dentre os quais se destacam:
 
-<p align="center"><b>Tabela X – Dados técnicos do módulo fotovoltaico OSDA ODA555-36V-MH</b></p>
+<p align="center"><b>Tabela 2 – Dados técnicos do módulo fotovoltaico OSDA ODA555-36V-MH</b></p>
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <div style={{ width: '600px' }}>
 
 | Parâmetro | Valor |
-|:---------:|:-----:|
+|:--|:--:|
 | Potência Nominal (Pmax) | 555 Wp |
 | Tensão de Potência Máxima (Vmp) | 41,48 V |
 | Corrente de Potência Máxima (Imp) | 13,38 A |
@@ -104,6 +107,9 @@ O desempenho dos módulos é caracterizado por parâmetros elétricos fundamenta
 | Coeficiente térmico da corrente (Isc) | +0,05 % / °C |
 | Coeficiente térmico da tensão (Voc) | −0,275 % / °C |
 
+  </div>
+</div>
+
 <p align="center"><small>Fonte: Datasheet OSDA (adaptado), 2025.</small></p>
 
 Esses parâmetros influenciam diretamente o dimensionamento das *strings*, a faixa de operação dos MPPTs e a potência efetivamente disponibilizada ao sistema em diferentes condições de irradiância e temperatura.
@@ -112,94 +118,128 @@ Esses parâmetros influenciam diretamente o dimensionamento das *strings*, a fai
 
 ## 5. Configuração Elétrica
 
-A configuração adotada foi estruturada para permitir adequada distribuição dos módulos entre os inversores e seus respectivos rastreadores de máxima potência. Essa organização contribui para o melhor aproveitamento energético e para a redução de perdas associadas a sombreamento parcial, diferenças de orientação ou variações térmicas entre grupos de módulos.
+A configuração elétrica do sistema fotovoltaico foi estruturada a partir de **36 módulos OSDA ODA555-36V-MH**, distribuídos em **4 strings de 9 módulos em série**. Esse arranjo resulta em uma potência total instalada de **19,98 kWp**, organizada de modo a aproveitar adequadamente as entradas dos inversores híbridos e seus rastreadores MPPT.
 
-A divisão em *strings* também favorece a supervisão do desempenho, uma vez que possibilita identificar comportamentos distintos entre arranjos e facilita procedimentos de manutenção corretiva ou preventiva.
+Cada string apresenta, em condições nominais, valores aproximados de:
 
----
+- **tensão no ponto de máxima potência:** 9 × 41,48 V = **373,32 V**;
+- **tensão de circuito aberto:** 9 × 49,56 V = **446,04 V**;
+- **corrente no ponto de máxima potência:** **13,38 A**;
+- **corrente de curto-circuito:** **14,20 A**.
+
+As quatro strings são conectadas a **2 inversores híbridos trifásicos Deye SUN-12K-SG04LP3**, cada um dotado de **2 MPPTs independentes**, de forma que cada inversor recebe duas strings. Essa divisão permite melhor controle do ponto de máxima potência, maior flexibilidade operacional e melhor resposta diante de possíveis diferenças de irradiância, temperatura ou sombreamento entre grupos de módulos.
+
+Sob o ponto de vista operacional, essa configuração apresenta vantagens relevantes, tais como:
+
+- compatibilidade entre a tensão das strings e a faixa de operação dos inversores;
+- aproveitamento equilibrado das entradas MPPT disponíveis;
+- redução das perdas causadas por sombreamento parcial;
+- facilidade de supervisão individual por string;
+- maior praticidade em inspeções e manutenções.
+
+Após a conversão da energia em corrente alternada, os inversores passam a integrar o subsistema de geração ao restante da instalação, permitindo interação com o banco de baterias, com as cargas e com a rede da concessionária. Dessa forma, a configuração elétrica adotada atende não apenas aos requisitos de geração, mas também à proposta experimental e didática da microrrede.
 
 ## 6. Arranjo Físico dos Módulos
 
-A disposição física dos módulos foi desenvolvida sobre estrutura do tipo *carport*, permitindo uma organização coerente com a topologia elétrica do sistema. Essa solução construtiva não apenas atende à necessidade de suporte mecânico, como também reforça o caráter funcional da instalação ao integrar geração de energia e cobertura de área útil.
+A disposição física dos módulos foi definida de forma a garantir coerência entre a organização construtiva do gerador e a configuração elétrica adotada no sistema. Para isso, os módulos foram instalados sobre estrutura metálica do tipo *carport*, solução que, além de fornecer suporte mecânico adequado, integra a geração fotovoltaica ao espaço útil da microrrede e facilita o acesso para inspeção, limpeza e manutenção.
 
-Os 36 módulos foram distribuídos de modo a formar quatro *strings*, alocadas entre dois inversores híbridos. Cada módulo foi identificado individualmente, o que facilita o rastreamento de falhas, o acompanhamento de desempenho e a associação entre posição física e conexão elétrica.
+O conjunto é composto por **36 módulos fotovoltaicos**, distribuídos de maneira ordenada sobre a estrutura e identificados individualmente. Essa identificação permite localizar cada unidade no arranjo com maior precisão, facilitando o rastreamento de falhas, o acompanhamento de desempenho e a associação entre a posição física do módulo e sua respectiva conexão elétrica.
+
+A Figura 2 apresenta o diagrama de alocação dos módulos no arranjo instalado. Observa-se que as unidades foram agrupadas em **quatro strings**, representadas por cores distintas, o que torna mais clara a divisão do gerador em blocos funcionais. Cada grupo colorido corresponde a um circuito em corrente contínua associado a um dos canais MPPT dos inversores híbridos.
+
+<p align="center"><i>Figura 3 – Diagrama de alocação e arranjo físico dos módulos fotovoltaicos da instalação.</i></p>
 
 <p align="center">
-  <img src="/microrrede-uftm/img/fotovoltaico-arranjo.png" width="620"/>
+  <img src="/microrrede-uftm/img/fotovoltaico-arranjo.png" width="700"/>
 </p>
 
-<p align="center"><i>Figura 2 – Diagrama de alocação e arranjo físico dos módulos fotovoltaicos da instalação.</i></p>
 <p align="center"><small>Fonte: elaboração própria, 2025.</small></p>
 
-A distribuição ilustrada permite compreender como os módulos foram agrupados em *strings* e como essas saídas foram associadas aos inversores e aos respectivos controladores MPPT. Essa correspondência entre arranjo físico e arquitetura elétrica é importante para interpretação de medições, ensaios e estratégias de operação.
+Pela figura, nota-se que a identificação dos módulos segue uma lógica que relaciona **inversor, string e posição do módulo** dentro do grupo. Essa convenção facilita a leitura do arranjo e permite compreender, de forma imediata, como os 36 módulos foram distribuídos entre os dois inversores híbridos. Também se observa que o sistema foi organizado para operar com **quatro strings de 9 módulos em série**, totalizando os **19,98 kWp** instalados em corrente contínua.
+
+Outro aspecto importante evidenciado na figura é a associação entre as strings e os **MPPTs** dos inversores. Como cada inversor possui dois rastreadores independentes, a divisão por grupos permite separar eletricamente os arranjos e, com isso, melhorar o controle do ponto de máxima potência. Essa organização contribui para maior flexibilidade operacional e facilita a análise de eventuais diferenças de desempenho entre os grupos de módulos.
+
+Do ponto de vista prático, o diagrama do arranjo físico também funciona como ferramenta de apoio à operação e à manutenção. Em caso de falha, queda de rendimento ou necessidade de inspeção, a identificação visual dos módulos e de suas respectivas strings permite localizar rapidamente a região afetada. Assim, a representação do arranjo não se limita à distribuição espacial dos módulos, mas também serve como referência para diagnóstico, monitoramento e interpretação do comportamento elétrico do sistema.
+
+Dessa forma, o arranjo físico adotado atende simultaneamente aos requisitos construtivos, operacionais e didáticos da instalação, reforçando a proposta da microrrede como plataforma experimental para estudos em geração distribuída, supervisão e integração energética.
 
 ---
 
 ## 7. Integração com os Inversores
 
-A energia gerada pelos módulos é encaminhada aos inversores híbridos, responsáveis pela conversão CC/CA, sincronização com a rede, gerenciamento do fluxo de potência e interface com o banco de baterias.
+A integração entre o arranjo fotovoltaico e a arquitetura elétrica da microrrede é realizada por meio de inversores híbridos trifásicos, responsáveis pela conversão da energia gerada em corrente contínua para corrente alternada e pela coordenação do fluxo energético entre os diferentes subsistemas. No caso em estudo, foram adotados dois inversores Deye SUN-12K-SG04LP3, cada um operando com duas entradas MPPT independentes, o que permite o processamento das quatro strings do gerador fotovoltaico de forma distribuída.
 
-Além da conversão propriamente dita, esses equipamentos executam funções essenciais para a operação do sistema, tais como:
+Esses equipamentos exercem função estratégica na operação do sistema, pois estabelecem a interface entre a geração solar, o banco de baterias, as cargas locais e a rede da concessionária. Em termos práticos, isso significa que os inversores não apenas convertem energia, mas também determinam como essa energia será disponibilizada, armazenada ou compartilhada com os demais elementos da instalação.
 
-- rastreamento do ponto de máxima potência;
-- gerenciamento da energia gerada;
-- coordenação com o sistema de armazenamento;
-- operação conectada à rede;
-- operação em condições isoladas;
-- disponibilização de dados ao ambiente supervisório.
+Entre suas principais atribuições, destacam-se:
 
-Dessa forma, os inversores atuam como elemento de interligação entre geração, armazenamento, cargas e rede elétrica.
+- rastreamento do ponto de máxima potência das strings conectadas;
+- conversão eletrônica CC/CA;
+- sincronização com a rede elétrica;
+- gerenciamento do fluxo de potência entre geração, armazenamento e consumo;
+- suporte aos modos de operação conectada, isolada e híbrida;
+- envio de variáveis elétricas e operacionais ao sistema supervisório.
 
----
+A presença de entradas MPPT independentes contribui para maior flexibilidade operacional e melhor aproveitamento energético, sobretudo em situações de diferenças térmicas, variações de irradiância ou possíveis assimetrias entre grupos de módulos. Além disso, a integração com o sistema de armazenamento amplia a capacidade de gerenciamento energético da microrrede, permitindo estratégias mais avançadas de operação e controle.
+
+Do ponto de vista experimental, a atuação dos inversores é especialmente relevante, pois eles concentram parte significativa das funções de conversão, monitoramento e coordenação energética da instalação. Por essa razão, constituem um dos principais elementos de análise para estudos relacionados à eficiência, estabilidade, qualidade de energia e desempenho operacional da microrrede.
 
 ## 8. Vista Geral da Integração do Subsistema
 
+<p align="center"><i>Figura 4 – Vista geral da integração do sistema fotovoltaico com os demais elementos da instalação.</i></p>
+
 <p align="center">
-  <img src="/microrrede-uftm/img/fotovoltaico-geral.JPEG" width="700"/>
+  <img src="/microrrede-uftm/img/fotovoltaico-geral.JPEG" width="900"/>
 </p>
 
-<p align="center"><i>Figura 3 – Vista geral da integração do sistema fotovoltaico com os demais elementos da instalação.</i></p>
 <p align="center"><small>Fonte: elaboração própria, 2025.</small></p>
 
-A representação geral evidencia a interação entre os módulos, os inversores, o banco de baterias, as cargas e a rede elétrica. Essa configuração permite analisar os fluxos de energia em diferentes cenários operacionais, bem como avaliar a resposta do sistema diante de variações de geração e demanda.
+A Figura 3 apresenta a instalação real do subsistema fotovoltaico implementado no campus Univerdecidade da UFTM, evidenciando sua integração física ao ambiente e sua aplicação prática dentro da microrrede experimental.
 
----
+Observa-se que os módulos fotovoltaicos estão dispostos sobre uma estrutura metálica do tipo *carport*, a qual desempenha dupla função: suporte mecânico para o arranjo solar e cobertura para os veículos estacionados. Essa solução construtiva otimiza o uso do espaço disponível, agregando valor funcional à instalação ao integrar geração de energia e infraestrutura urbana.
+
+O arranjo é composto por 36 módulos fotovoltaicos distribuídos de forma uniforme ao longo da estrutura, garantindo adequada exposição à radiação solar e favorecendo o desempenho energético do sistema. A inclinação e o posicionamento dos módulos foram definidos de modo a maximizar a captação de energia ao longo do dia, considerando as condições locais de irradiância.
+
+Do ponto de vista de integração, a imagem evidencia que o sistema fotovoltaico está diretamente inserido no ambiente de consumo, caracterizando uma geração distribuída próxima às cargas. Essa proximidade contribui para a redução de perdas elétricas e possibilita maior eficiência no aproveitamento da energia gerada.
+
+Embora os elementos elétricos não estejam explicitamente visíveis na imagem, a estrutura apresentada corresponde ao ponto inicial do fluxo energético do sistema, a partir do qual a energia gerada é conduzida aos inversores híbridos, posteriormente distribuída às cargas e integrada ao restante da microrrede.
+
+Assim, a Figura 3 não apenas ilustra a instalação física do subsistema fotovoltaico, mas também evidencia sua função como elemento ativo na infraestrutura energética do campus, contribuindo para estudos experimentais em geração distribuída, eficiência energética e integração de sistemas.
 
 ## 9. Modos de Operação Associados
 
-O subsistema fotovoltaico pode participar de diferentes condições de operação da instalação, em função da disponibilidade de geração, da demanda das cargas e do estado do sistema de armazenamento.
+O subsistema fotovoltaico participa diretamente da dinâmica operacional da microrrede, tendo seu comportamento condicionado pela disponibilidade de irradiância solar, pela demanda das cargas, pelo estado de carga do banco de baterias e pela condição de conexão com a rede elétrica. Dessa forma, sua atuação não ocorre de maneira isolada, mas integrada aos demais elementos do sistema, especialmente aos inversores híbridos e ao sistema de armazenamento.
+
+Essa característica permite que a geração solar seja aproveitada em diferentes cenários de operação, conferindo maior flexibilidade ao sistema e ampliando seu potencial para estudos de controle, gerenciamento energético e avaliação de desempenho.
 
 ### 9.1 Operação conectada à rede
 
-Nessa condição, a energia gerada pode ser consumida localmente e, quando houver excedente, integrada ao restante da instalação em coordenação com a rede elétrica.
+Na operação conectada à rede, a energia gerada pelo arranjo fotovoltaico pode ser utilizada diretamente para atendimento das cargas locais, reduzindo a dependência da alimentação externa. Nessa condição, os inversores operam sincronizados com a rede elétrica, permitindo que a geração seja integrada ao sistema em corrente alternada de forma coordenada e segura.
+
+Quando a potência gerada é inferior à demanda, a rede complementa o suprimento das cargas. Por outro lado, em situações de maior disponibilidade solar e menor consumo instantâneo, a energia excedente pode ser direcionada conforme a estratégia de gerenciamento adotada na microrrede. Esse modo de operação é especialmente relevante para avaliação do desempenho do sistema em regime normal de funcionamento, com presença simultânea de geração distribuída e alimentação da concessionária.
 
 ### 9.2 Operação com suporte do armazenamento
 
-Quando associado ao banco de baterias, o subsistema pode contribuir para estratégias de gerenciamento energético, priorizando o atendimento das cargas e o armazenamento da energia excedente.
+Quando associado ao banco de baterias, o subsistema fotovoltaico passa a atuar de forma mais ativa no gerenciamento energético da instalação. Nessa condição, parte da energia gerada pode ser destinada ao carregamento das baterias, especialmente em períodos de excedente de geração, permitindo armazenar energia para uso posterior.
+
+Esse modo amplia a flexibilidade operacional da microrrede, pois possibilita estratégias de priorização entre geração, armazenamento e consumo. Em termos práticos, a energia solar pode ser utilizada simultaneamente para atendimento das cargas e recarga do sistema de armazenamento, contribuindo para maior aproveitamento energético e melhor utilização dos recursos disponíveis. Além disso, essa configuração favorece estudos relacionados a despacho de energia, arbitragem temporal e redução da dependência da rede.
 
 ### 9.3 Operação em modo isolado
 
-Em situações específicas, a geração pode atuar em conjunto com o sistema de armazenamento para suprimento das cargas locais sem dependência direta da rede externa.
+No modo isolado, a geração fotovoltaica atua em conjunto com o banco de baterias para suprimento das cargas locais sem dependência direta da rede externa. Nessa condição, os inversores híbridos assumem papel fundamental na manutenção do fornecimento, realizando o condicionamento da energia gerada e coordenando sua interação com o sistema de armazenamento.
 
----
+A operação isolada é particularmente importante do ponto de vista experimental, pois permite avaliar a capacidade do sistema em sustentar cargas a partir de fontes locais de energia. Também possibilita análises relacionadas à estabilidade, continuidade de fornecimento e resposta da microrrede diante de variações de geração e demanda. Nesse contexto, o desempenho do subsistema fotovoltaico torna-se diretamente associado à disponibilidade solar e à capacidade de suporte energético das baterias.
+
+De modo geral, os diferentes modos de operação associados ao subsistema fotovoltaico demonstram sua versatilidade dentro da microrrede, evidenciando que a geração solar não apenas contribui para o suprimento energético da instalação, mas também participa ativamente das estratégias de controle e gerenciamento do sistema como um todo.
 
 ## 10. Aspectos Técnicos Relevantes
 
-Sob o ponto de vista técnico, destacam-se os seguintes aspectos:
+A análise do subsistema fotovoltaico evidencia um conjunto de aspectos técnicos que reforçam sua importância dentro da microrrede experimental. Entre eles, destaca-se inicialmente a utilização da geração solar como fonte renovável de energia, o que insere a instalação em um contexto atual de transição energética e de expansão da geração distribuída.
 
-- utilização de geração renovável como base experimental;
-- organização modular do arranjo;
-- flexibilidade para estudos em diferentes cenários operacionais;
-- integração direta com inversores híbridos e banco de baterias;
-- possibilidade de monitoramento individualizado de módulos e *strings*;
-- adequação para estudos de desempenho, supervisão e qualidade de energia.
+A configuração adotada, baseada em módulos organizados em *strings* e conectados a inversores híbridos com múltiplos MPPTs, proporciona elevada flexibilidade operacional e melhor aproveitamento da energia gerada. Essa estrutura permite não apenas o condicionamento eficiente da energia produzida, mas também o acompanhamento individualizado do desempenho do arranjo, favorecendo estudos técnicos mais detalhados.
 
-Essas características tornam o subsistema particularmente relevante para atividades acadêmicas e para validação de estratégias de operação em microrredes.
+Outro ponto relevante é a integração funcional entre o gerador fotovoltaico, o sistema de armazenamento, as cargas e a rede elétrica. Essa interação torna possível investigar diferentes cenários operacionais, avaliar estratégias de despacho energético e analisar a resposta do sistema diante de variações de irradiância, demanda e disponibilidade do banco de baterias.
 
----
+Também se destaca a organização física e a identificação dos módulos, fatores que contribuem para a rastreabilidade do sistema, simplificam procedimentos de manutenção e tornam mais objetiva a correlação entre layout construtivo e comportamento elétrico. Em um ambiente experimental, essa característica é especialmente importante, pois amplia a capacidade de diagnóstico e interpretação dos resultados obtidos.
 
-## 11. Considerações Técnicas
-
-O subsistema fotovoltaico possui papel central na estrutura energética da instalação experimental, servindo como ponto de partida para estudos de geração distribuída, integração entre fontes, eficiência energética e controle operacional.
-
-Sua configuração física e elétrica foi desenvolvida para permitir não apenas a produção de energia, mas também a análise detalhada do comportamento do sistema em situações reais, contribuindo para o desenvolvimento de pesquisas e aplicações voltadas à engenharia elétrica.
+Assim, os aspectos técnicos do subsistema fotovoltaico vão além de sua função de geração de energia, configurando-o como um elemento central para estudos em desempenho energético, supervisão, qualidade de energia, controle e integração de recursos energéticos distribuídos.

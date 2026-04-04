@@ -14,12 +14,14 @@ A integração entre geração, armazenamento, distribuição, automação e sup
 ---
 
 ## Vista geral da arquitetura
-<em>Figura 1 – Vista geral da arquitetura do sistema experimental do ICTE/UFTM.</em><br/>
-![Vista geral da arquitetura](/img/microrrede-geral.png)
+
+<p align="center"><i>Figura 1 – Vista geral da arquitetura do sistema experimental do ICTE/UFTM.</i></p>
 
 <p align="center">
-<small>Fonte: Autores (2025).</small>
+  <img src="/microrrede-uftm/img/microrrede-geral.png" width="700"/>
 </p>
+
+<p align="center"><small>Fonte: Autores (2025).</small></p>
 
 A Figura 1 apresentada ilustra a organização geral da microrrede, evidenciando a interligação entre os principais blocos funcionais do sistema. A partir dessa representação, é possível compreender como os fluxos de energia e informação são distribuídos ao longo da instalação.
 
