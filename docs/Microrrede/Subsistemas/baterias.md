@@ -13,7 +13,7 @@ Além do papel de suporte operacional, o banco de baterias possui importância a
 ## 1. Visão Geral do Sistema
 
 <p align="center">
-  <img src="/img/Banco de Baterias (1).JPEG" width="700" />
+  <img src="/img/banco-baterias.jpg" width="700" />
 </p>
 
 <p align="center"><i>Figura 7 – Banco de baterias Unipower UPLFP48-100Ah.</i></p>
